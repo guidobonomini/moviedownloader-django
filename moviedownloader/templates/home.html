@@ -1,0 +1,27 @@
+{% extends "header.html" %}
+
+{% block content %}
+	
+	<h1 id="homeTitle">movie downloader</h1>
+	<input type="text" id="searchQuery" class="form-control center" placeholder="Enter a movie..."/>
+	<div id="textboxAlert" class="alert alert-danger" role="alert"><strong>Warning!</strong> You must enter a movie</div>
+	<button type="button" id="searchButton" class="btn btn-default btn-lg">SEARCH</button>
+	
+		<div id="sitesDropdown">
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="siteOptions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:16%;">
+					Select Site to Search
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="siteOptions">
+					<li class="dropdown-header">Select Site to Search</li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">YTS</a></li>
+					<li><a href="#">PirateBay</a></li>				
+					<li><a href="#">All</a></li>
+				</ul>
+			</div>
+		</div>
+	
+	<div id="dropdownAlert" class="alert alert-danger" role="alert"><strong>Warning!</strong> You must select a site</div>
+{% endblock %}

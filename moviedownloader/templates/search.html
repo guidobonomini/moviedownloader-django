@@ -1,0 +1,52 @@
+{% extends "header.html" %}
+
+{% block content %}
+
+	{% if movies != None %}
+	
+		<h1 id="resultsFound">MOVIES FOUND</h1>
+		
+		<div class="container" id="moviesContainer">
+	
+			{% for movie in movies %}
+			
+				{% if forloop.counter|divisibleby:"5"%}
+					<div class="row">
+				{% endif %}
+				
+				{% if movie|length|divisibleby:"4"%}
+						<div class="col-md-2 movieColumns">
+							<h2 class="movieTitle">{{movie.0}}</h2>
+							<img src="{{movie.1}}" title="{{movie.0}}" class="img-thumbnail" height="400" width="280">
+							<a class="btn btn-default resolutionButtons" href="{{movie.2.0}}" role="button">{{movie.2.1}}</a>
+							<a class="btn btn-default resolutionButtons" href="{{movie.3.0}}" role="button">{{movie.3.1}}</a>
+							<a class="btn btn-default resolutionButtons" href="../../../searchSubdivx/{{movie.0}}/1/" data-toggle="tooltip" data-placement="bottom" title="Search subtitles for this movie" role="button">Search For Subtitles</a>
+						</div>
+				{% else %}
+						<div class="col-md-2 movieColumns">
+							<h2 class="movieTitle">{{movie.0}}</h2>
+							<img src="{{movie.1}}" title="{{movie.0}}" class="img-thumbnail" height="400" width="280">
+							<a class="btn btn-default resolutionButtons" href="{{movie.2.0}}" role="button">{{movie.2.1}}</a>
+							<a class="btn btn-default resolutionButtons" href="../../../searchSubdivx/{{movie.0}}/1/" data-toggle="tooltip" data-placement="bottom" title="Search subtitles for this movie" role="button">Search For Subtitles</a>
+						</div>
+				{% endif %}
+				
+				{% if forloop.counter|divisibleby:"5"%}
+					</div>
+				{% endif %}
+				
+			{% endfor %}
+			
+			{% if pages %}
+				{% include "includes/pagination.html" %}
+			{% endif %}
+		
+		</div>
+		
+	{% else %}
+	
+		{% include "includes/noResultsFound.html" %}
+		
+	{% endif %}
+	
+{% endblock %}

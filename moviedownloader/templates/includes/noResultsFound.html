@@ -1,0 +1,8 @@
+{% block content %}
+	{% if 'Sub' in request.path|urlencode %}
+		<h1 id="noSubtitleResults">NO SUBTITLES FOUND</h1>
+	{% else %}
+		<h1 id="noMovieResults">NO MOVIES FOUND</h1>
+	{% endif %}
+	<button type="button" class="btn btn-default btn-lg returnToHome" onclick="window.location.pathname = {% url 'index' %}" id="returnHome">Return Home</button>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "header.html" %}
+
+{% block content %}
+
+	{% if subtitles != None %}
+	
+		<h1 id="resultsFound">SUBTITLES FOUND</h1>
+		
+		<div class="container" id="subtitlesContainer">
+			<table class="table table-bordered">
+				 <tr>
+					<th style="text-align:center;">#</th>
+					<th>Subtitle</th>
+					<th style="text-align:center;">Download</th>
+				</tr>
+			{% for subtitle in subtitles %}
+				 <tr>
+					<th style="text-align:center;">{{ forloop.counter }}</th>
+					<th>{{ subtitle.0 }}</th>
+					<th style="text-align:center;"><a class="glyphicon glyphicon-save" href="{{ subtitle.1 }}"></a></th>
+				</tr>				
+			{% endfor %}
+			
+			</table>
+			
+			{% if pages %}
+				{% include "includes/pagination.html" %}
+			{% endif %}
+		
+		</div>
+		
+	{% else %}
+	
+		{% include "includes/noResultsFound.html" %}
+		
+	{% endif %}
+	
+{% endblock %}

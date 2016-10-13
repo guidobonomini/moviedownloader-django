@@ -1,0 +1,24 @@
+{% block content %}
+	<footer>
+		<center>
+			<ul class="pagination" id="searchPagination">
+			
+				<li>
+				<a href="#" class="paginationButtons" aria-label="Previous">
+					<span aria-hidden="true">&laquo;</span>
+				</a>
+				</li>
+				
+				{% for i in pages%}
+					<li><a href=../{{forloop.counter}}>{{forloop.counter}}</a></li>
+				{% endfor %}
+				
+				<li>
+				<a href="#" class="paginationButtons" aria-label="Next">
+					<span aria-hidden="true">&raquo;</span>
+				</a>
+				</li>
+			</ul>
+		</center>
+	</footer>
+{% endblock %}

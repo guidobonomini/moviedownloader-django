@@ -1,0 +1,263 @@
+/*Home and Home Options CSS Portion*/
+
+#homeTitle{
+	margin-top:7%;
+	margin-left:31%;
+	font-family: "LemonMilk";
+	font-size: 3.7vw;
+}
+
+#searchQuery{
+	margin:auto;
+	top:35%;
+	right:0;
+	left:0;
+	position:absolute; 
+	width:40%; 
+	height:4%; 
+	border-radius: 3px;
+}
+
+#searchButton{
+	margin:auto;
+	top:7%;
+	right:1%;
+	bottom:1%;
+	left:0;
+	position:absolute; 
+	width:10%; 
+	height:7%; 
+	border-radius: 3px;
+	font-family: "Heavitas";
+	font-size: 1.5vw;
+}
+
+#sitesDropdown{
+	margin:auto;
+	top:64%;
+	left:45%;
+	bottom:0;
+	right:0;
+	position:absolute;
+	font-family: "Villeray-Semilight";
+}
+
+#siteOptions{
+	font-size: 0.72vw;
+}
+
+#textboxAlert{
+	text-align:center;
+	display:none;
+	margin:auto;
+	top:39%;
+	right:0;
+	left:0;
+	position:absolute; 
+	width:40%;
+	vertical-align: middle;
+	font-size:0.9vw;
+}
+
+#dropdownAlert{
+	text-align:center;
+	display:none;
+	margin:auto;
+	top:67.5%;
+	right:1%;
+	left:0;
+	position:absolute; 
+	width:9%;
+	font-size:0.72vw;
+}
+/*-----------------------------*/
+
+
+/*Search YTS CSS Portion*/
+
+#resultsFound{
+	margin-top:3%;
+	margin-left:39%;
+	font-family: "LemonMilk";
+	font-size: 60px;
+}
+
+#moviesContainer{
+	margin:auto;
+	top:24%;
+	right:0;
+	left:4%;
+	position:absolute; 
+	width:95%;
+	height:40%; 
+	border-radius: 3px;
+}
+
+.movieTitle{
+	font-family: "SoftLine";
+	font-size: 32px;
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+	white-space: nowrap; 
+	width:100%; 
+	display:block; 
+	text-align:center;
+}
+
+.resolutionButtons{
+	margin-top:14px;
+	font-family: "Villeray-Semilight";
+	font-size: 12.2px;
+}
+
+.movieColumns{
+	margin-left:25px;
+	margin-right:20px;
+	margin-bottom:35px;
+}
+
+/*-----------------------------*/
+
+
+/*Pagination CSS Portion*/
+
+#searchPagination{
+	margin-top:50px;
+	margin-bottom:40px;
+}
+
+/*-----------------------------*/
+
+
+/*No Results Found CSS Portion*/
+
+#noMovieResults{
+	margin:auto;
+	top:30%;
+	right:0;
+	left:12%;
+	position:absolute; 
+	width:40%; 
+	height:4%; 
+	border-radius: 3px;
+	font-family: "LemonMilk";
+	font-size: 60px;
+}
+
+#noSubtitleResults{
+	margin:auto;
+	top:30%;
+	right:0;
+	left:9%;
+	position:absolute; 
+	width:40%; 
+	height:4%; 
+	border-radius: 3px;
+	font-family: "LemonMilk";
+	font-size: 60px;
+}
+
+#returnHome{
+	margin:auto;
+	top:0;
+	right:1%;
+	bottom:1%;
+	left:0;
+	position:absolute; 
+	width:10%;
+	height:7%;
+	font-family: "Heavitas";
+	font-size: 20px;
+}
+
+/*-----------------------------*/
+
+/* Subtitles Page */
+
+#subtitlesContainer{
+	margin:auto;
+	top:24%;
+	right:0;
+	left:4%;
+	position:absolute; 
+	width:55%;
+	height:40%; 
+	border-radius: 3px;
+}
+
+/*-----------------------------*/
+
+/* Sign-Up Page */
+
+
+.regTitle{
+	margin-bottom:3%;
+	font-family: "LemonMilk";
+	font-size: 30px;
+}
+
+.regSubmit{
+	margin-top:5%;
+}
+
+/*-----------------------------*/
+
+
+/*Fonts*/
+
+@font-face{
+	font-family: LemonMilk;
+    src: url("../fonts/LemonMilk.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: Porter Bold;
+    src: url("../fonts/Porter Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: SoftLine;
+    src: url("../fonts/SoftLine.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: Heavitas;
+    src: url("../fonts/Heavitas.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: REVOLUTION;
+    src: url("../fonts/REVOLUTION.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: telegrafico;
+    src: url("../fonts/telegrafico.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: Geometos;
+    src: url("../fonts/Geometos.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: Villeray-Semilight;
+    src: url("../fonts/Villeray-Semilight.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+/*-----------------------------*/
